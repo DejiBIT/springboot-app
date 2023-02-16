@@ -17,6 +17,8 @@ spec:
       containers:
       - name: my-springboot-app
         image: latest
+        imagePullSecrets:
+      - name: dockersecret
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
